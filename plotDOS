@@ -1,0 +1,8 @@
+#!/usr/bin/gnuplot
+set terminal postsc eps enhanced color
+set output "a.eps"
+set xlabel "E-E_{fermi}(eV)"
+set ylabel "state per Energy"
+
+plot 'DOS_tot' using 1:4 w l title "d-band"
+
